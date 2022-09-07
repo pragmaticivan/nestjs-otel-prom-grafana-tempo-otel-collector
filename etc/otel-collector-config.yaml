@@ -12,7 +12,8 @@ exporters:
 
   jaeger:
     endpoint: tempo:14250
-    insecure: true
+    tls:
+      insecure: true
 
 processors:
   batch:
